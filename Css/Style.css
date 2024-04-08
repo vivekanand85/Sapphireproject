@@ -1,0 +1,1052 @@
+@font-face {
+  font-family: "Point";
+  src: url(FontsFree-Net-point-soft-regular.ttf);
+}
+:root {
+  --bs-gold:#C9982E;
+  --bs-black:#464646;
+  --bs-sceencolor:#F8EFE8;
+  --bs-teritory-color: #858E52;
+  --background-bg-primary: #fff;
+  --color-whitesmoke-100: #faf8f8;
+  --color-whitesmoke-200: #eeecef;
+  --color-background-color:#FEEADB;
+  --color-whitesmoke-300: rgba(245, 245, 245, 0.5);
+  --color-sienna-100: #7A3F33;
+  --color-sienna-200: #7e3a2a;
+  --color-gray-100: #1c1b1f;
+  --color-gray-200: rgba(255, 255, 255, 0.75);
+  --text-txt-primary: #000;
+  --color-rosybrown-100: #d5b1a7;
+  --color-darkslategray-100: #425066;
+  --color-darkslategray-200: #464646;
+  --text-txt-secondary: rgba(60, 60, 67, 0.85);
+  --color-silver: #e1d1c8;
+  --color-gainsboro: #D9D9D9;
+  --color-snow: #fff4f4;
+  --bs-heading-first-tag:1.875rem;
+  --bs-heading-second-tag:1.5rem;
+  --bs-heading-third-tag:1.25rem ;
+  --bs-heading-fourth-tag:1.125rem;
+  --bs-heading-fifth-tag:1rem;
+  --bs-heading-sixth-tag:0.875rem;
+  --color-linen: #f8efe8;
+  --btn-color:#7A3F33;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x:0 !important;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  font-family: "gotu", "point";
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+input, select {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-size: 0.8rem !important;
+}
+
+input, select {
+  width: 100%;
+  outline: none;
+}
+
+address {
+  font-style: normal;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+html {
+  font-family: "gotu", "point";
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+/* For Firefox */
+/* Note: Firefox does not support changing the color of the scrollbar handle */
+/* You can only style the scrollbar track */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-sienna-200) white; /* Color of the track and handle */
+  scroll-behavior: smooth;
+}
+
+/* For Webkit based browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+h1 {
+  font-size: var(--bs-heading-first-tag) !important;
+  color: var(--color-sienna-100) !important;
+  margin: 1.8rem 0;
+}
+
+h2 {
+  font-size: var(--bs-heading-second-tag) !important;
+}
+
+h3 {
+  font-size: var(--bs-heading-third-tag) !important;
+}
+
+h4 {
+  font-size: var(--bs-heading-fourth-tag) !important;
+  line-height: 1.6 !important;
+}
+
+h5 {
+  font-size: var(--bs-heading-fifth-tag) !important;
+}
+
+h6 {
+  font-size: var(--bs-heading-sixth-tag) !important;
+  line-height: 1.6 !important;
+}
+
+.row {
+  --bs-gutter-x: 0 !important;
+}
+
+video {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+/*=
+==================== header======================= */
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: var(--color-sienna-200) !important;
+  font-weight: bolder;
+}
+
+.navbar {
+  background-color: #f8f9fa !important;
+  font-weight: bolder;
+}
+.navbar .navbar-nav .nav-link .active {
+  position: relative;
+  color: #ffd700 !important;
+}
+.navbar .navbar-nav .nav-link .active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffd700 !important;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: all 0.3s ease-in-out;
+}
+.navbar .navbar-nav .nav-link .active:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+.navbar img {
+  width: 70%;
+}
+.navbar .nav-item:hover .nav-link {
+  color: var(--bs-gold) !important;
+}
+
+.nav-link {
+  margin: 0 2rem;
+  font-size: 1.124rem !important;
+  font-weight: 600 !important;
+}
+
+.Sap-ski .container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.Sap-ski .container .Sap-ski-second {
+  align-items: center;
+  display: grid;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  background-color: var(--color-background-color);
+}
+.Sap-ski .container .Sap-ski-second h5, .Sap-ski .container .Sap-ski-second h4, .Sap-ski .container .Sap-ski-second a {
+  font-family: "Point";
+  text-decoration: none;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.Sap-ski .container .Sap-ski-second a {
+  color: var(--bs-gold);
+  font-weight: 500;
+  text-decoration: underline;
+}
+.Sap-ski .container .Sap-ski-second .text-end-button {
+  text-align: end;
+  display: grid;
+  align-items: center;
+}
+.Sap-ski .container .Sap-ski-second .text-end-button button {
+  background-color: var(--color-sienna-100);
+  color: var(--background-bg-primary);
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  font-size: 1rem !important;
+  font-weight: 600;
+}
+
+.About-Clinic {
+  margin-top: 5rem;
+}
+.About-Clinic .col-lg-4 {
+  overflow: hidden;
+}
+.About-Clinic h1 {
+  color: var(--color-sienna-100);
+}
+.About-Clinic h3 {
+  font-family: "Point";
+  font-weight: 400;
+  line-height: 1.4;
+}
+.About-Clinic .About-Clinic-second {
+  padding: 0 1rem 0 2rem;
+}
+.About-Clinic .About-Clinic-second .col-6 {
+  text-align: center;
+  padding: 0.5rem;
+}
+.About-Clinic .About-Clinic-second .col-6 img {
+  margin-bottom: 1rem;
+}
+.About-Clinic img {
+  transition: transform 1s linear;
+  overflow: hidden;
+}
+.About-Clinic img:hover {
+  transform: scale(1.07);
+  overflow: hidden;
+}
+
+.Service-Home {
+  margin-top: 4rem;
+  overflow: hidden;
+}
+.Service-Home .Service-Home-first {
+  position: relative;
+}
+.Service-Home .Service-Home-first h5 {
+  padding: 0.5rem;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+  opacity: 0; /* Initially hide the paragraph */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+.Service-Home .Service-Home-first:hover h5 {
+  opacity: 0.7;
+}
+.Service-Home .col-lg-4 {
+  overflow: hidden;
+}
+.Service-Home .col-lg-4 h5 {
+  font-family: "point";
+  width: 80%;
+}
+
+.common-treated {
+  margin-top: 4rem;
+  padding-top: 1rem;
+}
+.common-treated h3 {
+  color: var(--bs-teritory-color);
+}
+.common-treated .common-treated-second {
+  background-color: var(--color-whitesmoke-100);
+  padding-top: 1.5rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  align-items: center;
+  display: grid;
+}
+.common-treated .common-treated-second img {
+  width: 58%;
+  margin-bottom: 0.9rem;
+  margin-top: 1.4rem;
+}
+.common-treated .common-treated-second h4 {
+  font-weight: 400 !important;
+  text-align: start;
+  padding-right: 1.3rem;
+}
+.common-treated .common-treated-second h3 {
+  text-align: start;
+}
+.common-treated .common-treated-second h2, .common-treated .common-treated-second h3, .common-treated .common-treated-second h4 {
+  font-family: "Point";
+  font-weight: 400;
+  line-height: 1.3;
+}
+.common-treated .common-treated-second h1 {
+  line-height: 1.3;
+}
+.common-treated .common-treated-second .common-treated-second-one {
+  margin-bottom: 2rem;
+}
+.common-treated .common-treated-second .common-treated-second-one h3 {
+  color: rgb(33, 37, 41);
+}
+.common-treated .col-xl-4 {
+  height: 487px;
+}
+
+.Reflcting-radiance {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.Reflcting-radiance .col-5 {
+  overflow: hidden;
+}
+.Reflcting-radiance .col-5 img {
+  margin-top: 1rem;
+}
+.Reflcting-radiance .col-5 h3 {
+  font-family: "Point";
+  font-weight: 400;
+}
+.Reflcting-radiance .Reflcting-radiance-first {
+  padding-right: 5rem;
+}
+.Reflcting-radiance .Reflcting-radiance-second {
+  padding-left: 5rem;
+}
+.Reflcting-radiance .col-1 {
+  position: relative;
+}
+.Reflcting-radiance .vrr {
+  border-right: 1px solid grey;
+  display: inline-block;
+  height: 25rem;
+  position: absolute;
+  top: 4rem;
+  left: 3.7rem;
+}
+
+.Testimonials .carousel-control-prev {
+  color: black;
+}
+.Testimonials .Testimonials-two {
+  text-align: center;
+  display: grid;
+  align-items: center;
+}
+.Testimonials .Testimonials-two h1, .Testimonials .Testimonials-two h3 {
+  margin-top: 1rem;
+  padding: 0 3rem;
+  line-height: 1.4;
+}
+.Testimonials .Testimonials-two h1 {
+  position: relative;
+  top: 5rem;
+}
+.Testimonials .Testimonials-two h3 {
+  font-family: "Point";
+  font-weight: 400;
+}
+
+.About-about-clinic {
+  background-color: var(--color-whitesmoke-200);
+}
+.About-about-clinic .About-about-clinic-first {
+  background-color: var(--color-whitesmoke-200);
+  padding: 1.5rem;
+}
+.About-about-clinic .About-about-clinic-first .verticalline {
+  height: 10rem;
+  position: relative;
+  left: 0.5rem;
+  display: flow-root;
+  border-left: 0.2rem solid var(--bs-gold);
+  margin-bottom: 0.7rem;
+}
+.About-about-clinic .About-about-clinic-first #letter-container {
+  writing-mode: vertical-lr;
+  white-space: nowrap;
+  text-orientation: mixed;
+}
+.About-about-clinic .About-about-clinic-second {
+  padding: 2rem;
+  background-color: var(--background-bg-primary);
+  text-align: center;
+}
+.About-about-clinic .About-about-clinic-second h2, .About-about-clinic .About-about-clinic-second h3, .About-about-clinic .About-about-clinic-second h4, .About-about-clinic .About-about-clinic-second h5 {
+  font-family: "Point";
+  font-weight: 400;
+  line-height: 1.4;
+}
+.About-about-clinic .About-about-clinic-third {
+  padding: 1rem;
+}
+.About-about-clinic .About-about-clinic-third img {
+  height: 100%;
+}
+
+.sapphire-skin {
+  margin: 5rem 0;
+  background-color: var(--bs-sceencolor);
+  padding: 1rem;
+}
+.sapphire-skin .row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-items: center;
+}
+.sapphire-skin .row hr {
+  margin: 1rem 0;
+  color: var(--bs-gold);
+  border: 2px solid var(--bs-gold);
+  border-top: var(--bs-border-width) solid;
+  opacity: 2;
+  width: 20%;
+}
+.sapphire-skin .row h3 {
+  width: 75%;
+  font-family: "Point";
+  font-weight: 400;
+  line-height: 1.4;
+  padding-left: 2rem;
+}
+
+.Our-Exp h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+.Our-Exp .col-lg-4 {
+  padding: 3rem 3rem 3rem 0;
+}
+.Our-Exp .col-lg-4 .wrap1 {
+  border: 1px solid grey;
+  border-radius: 2rem;
+}
+.Our-Exp .col-lg-4 .wrap1 img {
+  border-radius: 2rem 2rem 0 0;
+}
+.Our-Exp .col-lg-4 .wrap1 h3 {
+  margin-top: 1rem;
+}
+.Our-Exp .col-lg-4 .wrap1 h3, .Our-Exp .col-lg-4 .wrap1 h5, .Our-Exp .col-lg-4 .wrap1 h4 {
+  padding: 0 1rem;
+  font-family: "Point";
+  font-weight: 400;
+}
+
+.mi-vi-value {
+  background-color: var(--color-whitesmoke-100);
+}
+.mi-vi-value h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.mi-vi-value .col-xl-4 {
+  padding: 2rem 2rem 2rem 0;
+}
+.mi-vi-value .col-xl-4 h4 {
+  font-family: "Point";
+  font-weight: 400;
+  font-weight: 400;
+}
+
+.key-highlights .key-highlights-second {
+  display: grid;
+  align-items: center;
+}
+.key-highlights .key-highlights-second h3 {
+  padding-right: 0.6rem;
+}
+.key-highlights .key-highlights-second h4 {
+  padding-left: 0.5rem;
+}
+
+.best-doc {
+  padding: 2rem 0;
+  margin-top: 5rem;
+  background-color: var(--color-whitesmoke-100);
+}
+.best-doc h2, .best-doc h4 {
+  font-family: "Point";
+  font-weight: 400;
+}
+.best-doc svg {
+  margin-bottom: 1.3rem;
+}
+.best-doc .best-doc-first {
+  margin-bottom: 2rem;
+}
+.best-doc .best-doc-first h2 {
+  margin-bottom: 2rem;
+}
+.best-doc .best-doc-first h4 {
+  padding-right: 3.8rem;
+}
+.best-doc .col-4 {
+  padding-right: 1.4rem;
+}
+
+.service-offer {
+  margin-top: 8rem;
+}
+.service-offer .tab-row {
+  align-items: center;
+  background-color: var(--color-sienna-100);
+  border-radius: 1rem 1rem 0 0;
+  padding: 0.5rem 0.5rem;
+}
+.service-offer .tab-row .tablink-row {
+  transition: 0.3s;
+  background-color: var(--color-sienna-100);
+  color: var(--background-bg-primary);
+}
+.service-offer .tab-row .tablink-row:active {
+  border-radius: 2rem;
+  background-color: var(--background-bg-primary);
+  color: black;
+}
+.service-offer .tab-row button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.service-offer .tab-row button h2 {
+  margin-bottom: 0 !important;
+  padding: 0.5rem;
+}
+.service-offer .tab-row button:hover {
+  border-radius: 2rem;
+  background-color: var(--background-bg-primary);
+  color: black;
+}
+.service-offer .tablink-row.active {
+  background-color: white; /* Change background color to white when active */
+  color: black; /* Change text color when active */
+  border-radius: 2rem;
+}
+
+.General, .Cosmetology, .trichology {
+  position: relative;
+  background-color: var(--bs-sceencolor);
+  padding: 1rem 1rem;
+}
+.General .open, .Cosmetology .open, .trichology .open {
+  transform: rotate(225deg);
+}
+.General .ver-tabv, .Cosmetology .ver-tabv, .trichology .ver-tabv {
+  padding: 2rem 0.4rem;
+}
+.General .ver-tabv .row-vertical-tab .row, .Cosmetology .ver-tabv .row-vertical-tab .row, .trichology .ver-tabv .row-vertical-tab .row {
+  border-bottom: 1px solid grey;
+  margin-bottom: 0.7rem;
+}
+.General .ver-tabv .row-vertical-tab .row a, .Cosmetology .ver-tabv .row-vertical-tab .row a, .trichology .ver-tabv .row-vertical-tab .row a {
+  text-decoration: none;
+}
+.General .ver-tabv .row-vertical-tab .row .arrow, .Cosmetology .ver-tabv .row-vertical-tab .row .arrow, .trichology .ver-tabv .row-vertical-tab .row .arrow {
+  width: 1rem;
+  transition: transform 0.3s linear;
+}
+.General .ver-tabv .row-vertical-tab .row .arrow:hover, .Cosmetology .ver-tabv .row-vertical-tab .row .arrow:hover, .trichology .ver-tabv .row-vertical-tab .row .arrow:hover {
+  transform: rotate(225deg);
+}
+.General h3, .Cosmetology h3, .trichology h3 {
+  font-family: "Point";
+  font-weight: 400;
+  font-weight: 400;
+  line-height: 1.3 !important;
+}
+.General .col-xl-9, .Cosmetology .col-xl-9, .trichology .col-xl-9 {
+  padding-left: 5rem;
+}
+.General .col-xl-9 b, .Cosmetology .col-xl-9 b, .trichology .col-xl-9 b {
+  font-family: "Point";
+}
+.General .col-xl-9 h3, .Cosmetology .col-xl-9 h3, .trichology .col-xl-9 h3 {
+  margin-bottom: 1rem;
+  font-family: "Point";
+  font-weight: 400;
+  font-weight: 500;
+  color: var(--color-sienna-100);
+  line-height: 1.4;
+}
+.General .col-xl-9 h4, .Cosmetology .col-xl-9 h4, .trichology .col-xl-9 h4 {
+  font-family: "Point";
+  font-weight: 400;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.service-skin {
+  background-color: #FFF8F1;
+  padding-top: 2rem;
+}
+.service-skin h3 {
+  font-family: "Point";
+  font-weight: 400;
+}
+.service-skin .service-skin-third .row {
+  background-color: var(--background-bg-primary);
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  margin-left: 3rem;
+}
+.service-skin .service-skin-third .row .col-2 {
+  display: grid;
+  align-items: center;
+}
+.service-skin .service-skin-third .row .col-2 img {
+  width: 70%;
+  background-color: #D9C3B5;
+  border-radius: 2rem;
+  position: relative;
+  right: 0.8rem;
+}
+
+.faq {
+  margin-top: 10rem;
+}
+.faq h3, .faq h4 {
+  font-family: "Point";
+  font-weight: 400;
+}
+.faq h3 {
+  font-weight: 500;
+}
+.faq .faq-hr {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.faq .faq-hr h1 {
+  display: inline-block;
+  width: 30%;
+}
+.faq .faq-hr hr {
+  color: var(--bs-gold);
+  border: 1.5px solid var(--bs-gold);
+  border-top: var(--bs-border-width) solid;
+  opacity: 2;
+  width: 40%;
+}
+.faq .row .col-lg-12 {
+  margin: 1rem 0;
+  padding-right: 1rem;
+}
+.faq .row .col-lg-12 h4 {
+  margin-bottom: 0.8rem;
+  line-height: 1.4 !important;
+}
+.faq .row .col-lg-12 .question {
+  cursor: pointer;
+}
+.faq .row .col-lg-12 .arrow {
+  width: 1.2rem;
+  position: relative;
+  top: -0.4rem;
+  transition: transform 0.3s ease;
+}
+.faq .row .col-lg-12 .open {
+  transform: rotate(180deg);
+}
+.faq .row .col-lg-12 .text-puls {
+  display: none;
+}
+
+.Equipments-use {
+  position: relative;
+}
+.Equipments-use h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.Equipments-use h3, .Equipments-use h4, .Equipments-use h5 {
+  font-family: "Point";
+  font-weight: 400;
+  text-align: center;
+}
+
+.table-col img {
+  padding-right: 0.8rem;
+}
+.table-col .last-img {
+  position: relative;
+}
+.table-col .last-img img {
+  position: absolute;
+  top: -15.9rem;
+}
+
+.contact-farm {
+  position: relative;
+}
+.contact-farm .contact-farm-sec {
+  position: absolute;
+  right: 0;
+  top: 4.5rem;
+}
+.contact-farm .contact-farm-sec .row {
+  border-radius: 1rem;
+  margin: 0 0.7rem;
+  padding-right: 1rem;
+}
+.contact-farm .contact-farm-sec .contact-farm-sec-part1 {
+  border: 1px solid var(--color-rosybrown-100);
+  border-radius: 1rem 0 0 1rem;
+  padding-bottom: 0.6rem;
+  opacity: 0.8;
+  font-weight: bolder;
+  background-color: var(--background-bg-primary);
+}
+.contact-farm .contact-farm-sec .contact-farm-sec-part1 h1 {
+  padding: 1rem;
+  margin: 0 1rem;
+  display: inline-block;
+  border-bottom: 3px solid var(--color-sienna-100);
+}
+.contact-farm .contact-farm-sec .contact-farm-sec-part1 input, .contact-farm .contact-farm-sec .contact-farm-sec-part1 textarea {
+  border: none;
+  padding: 1rem;
+  margin: 0 0.7rem;
+  border-bottom: 1px solid var(--color-sienna-100);
+  width: 90%;
+}
+.contact-farm .contact-farm-sec .contact-farm-sec-part1 .g-recaptcha {
+  padding: 0.9rem;
+}
+.contact-farm .contact-farm-sec .contact-farm-sec-part1 button {
+  padding: 1rem;
+  border: none;
+  padding: 1rem;
+  margin: 0 1rem;
+  border-bottom: 1px solid var(--color-sienna-100);
+  width: 50%;
+  border-radius: 1rem;
+  color: white;
+  background-color: var(--color-sienna-100);
+}
+
+footer {
+  background-color: #FFF8F1;
+  padding-top: 4rem;
+}
+footer .footer h2 {
+  color: var(--color-sienna-100);
+}
+footer .footer h4 {
+  font-family: "Point";
+  font-weight: 400;
+}
+footer .footer svg {
+  width: 1.9rem;
+  display: inline-block;
+}
+footer .footer .fotter-first {
+  padding-right: 1.4rem;
+}
+footer .footer .fotter-first h4 {
+  margin-bottom: 1.8rem;
+}
+footer .footer .fotter-second {
+  padding-right: 1.8rem;
+}
+footer .footer .fotter-second h4 {
+  margin-bottom: 1.8rem;
+}
+footer .footer .fotter-third {
+  background-color: #FAF8F8;
+  padding: 1.5rem;
+  box-shadow: 1px 1px 17px -8px;
+  border-radius: 0 2rem 0 2rem;
+}
+footer .footer .fotter-third img {
+  width: 60%;
+  position: relative;
+  top: -1.7rem;
+}
+footer .footer .fotter-third button {
+  padding: 1rem 8rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  color: var(--background-bg-primary);
+  font-weight: 600;
+  background-color: var(--color-sienna-100);
+  font-size: 1rem !important;
+}
+footer .footer .fotter-third button a {
+  text-decoration: none;
+}
+footer .container-fluid {
+  background-color: var(--color-sienna-100);
+  color: var(--background-bg-primary);
+  text-align: center;
+  padding: 0.4rem;
+  margin-top: 1.8rem;
+}
+
+@media screen and (max-width: 768.987px) {
+  .Sap-ski .container .Sap-ski-second .text-end-button {
+    text-align: start;
+  }
+  .Our-Exp .col-lg-4 .wrap1 {
+    height: 340px;
+  }
+  .service-skin {
+    background-color: #FFF8F1;
+    padding-top: 2rem;
+  }
+  .service-skin h3 {
+    font-family: "Point";
+    font-weight: 400;
+  }
+  .service-skin .service-skin-third .row {
+    margin-left: 0;
+    padding: 0;
+  }
+  .service-skin .service-skin-third .row .col-2 img {
+    width: 30%;
+  }
+  .service-skin .service-skin-third .row .col-9 {
+    display: grid;
+    align-items: center;
+  }
+  .service-offer .General .col-xl-9 {
+    padding-left: 0;
+  }
+  .Reflcting-radiance .col-5 {
+    overflow: hidden;
+  }
+  .Reflcting-radiance .col-5 h1 {
+    margin-bottom: 0 !important;
+  }
+  .Reflcting-radiance .col-5 h3 {
+    font-family: "Point";
+    font-weight: 400;
+  }
+  .Reflcting-radiance .col-5 img {
+    margin-top: 1rem;
+  }
+  .Reflcting-radiance .Reflcting-radiance-first {
+    padding-right: 1rem;
+  }
+  .Reflcting-radiance .Reflcting-radiance-second {
+    padding-left: 2rem;
+  }
+  .Reflcting-radiance .col-1 {
+    position: relative;
+  }
+  .Reflcting-radiance .vrr {
+    border-right: 1px solid grey;
+    display: inline-block;
+    height: 18rem;
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+  }
+  .Testimonials .Testimonials-two h1 {
+    position: relative;
+    top: 0.6rem;
+  }
+  .common-treated .col-xl-4 {
+    height: auto;
+  }
+}
+@media screen and (min-width: 1770px) {
+  .contact-farm {
+    position: relative;
+  }
+  .contact-farm .contact-farm-sec {
+    position: absolute;
+    top: 12rem;
+  }
+}
+@media screen and (max-width: 1273px) {
+  html {
+    font-size: 13px;
+  }
+  .About-Clinic .About-Clinic-first img {
+    height: 100%;
+  }
+  .About-Clinic .About-Clinic-third img {
+    height: 50%;
+  }
+  .About-Clinic .About-Clinic-second {
+    padding: 0 1rem 0 2rem;
+  }
+  .About-Clinic .About-Clinic-second .col-6 {
+    text-align: center;
+    padding: 0.5rem;
+  }
+  .About-Clinic .About-Clinic-second .col-6 img {
+    margin-bottom: 1rem;
+  }
+  .common-treated .col-xl-4 {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1270px) {
+  .contact-farm {
+    position: relative;
+    margin-bottom: 4rem;
+  }
+  .contact-farm .contact-farm-sec {
+    position: relative;
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    padding: 0 1rem !important;
+  }
+  .About-Clinic .About-Clinic-first img {
+    height: auto;
+  }
+  .About-Clinic .About-Clinic-third img {
+    height: auto;
+  }
+  .Reflcting-radiance .col-lg-6 {
+    padding: 0;
+  }
+  .Testimonials-two h2 {
+    padding: 0 !important;
+  }
+  .About-about-clinic .About-about-clinic-first .verticalline {
+    height: 5rem;
+  }
+  .About-about-clinic .About-about-clinic-first #letter-container {
+    writing-mode: horizontal-tb;
+    white-space: nowrap;
+    text-orientation: mixed;
+  }
+  .About-about-clinic .About-about-clinic-second {
+    padding: 1rem;
+  }
+  .About-about-clinic .About-about-clinic-third img {
+    height: auto;
+  }
+  .Our-Exp .col-lg-4 {
+    padding: 0;
+    margin: 1rem 0;
+  }
+  .Our-Exp .col-lg-4 .wrap1 {
+    height: auto;
+  }
+  .service-skin {
+    background-color: #FFF8F1;
+    padding-top: 2rem;
+  }
+  .service-skin h3 {
+    font-family: "Point";
+    font-weight: 400;
+  }
+  .service-skin .service-skin-third .row {
+    background-color: var(--background-bg-primary);
+    margin-bottom: 1rem;
+    margin-top: 0.8rem;
+    padding: 0;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1338.979px) and (max-width: 1770px) {
+  .common-treated .common-treated-first img {
+    height: 100%;
+  }
+  .common-treated .common-treated-second {
+    padding: 0 1.6rem;
+    padding-top: 1.3rem;
+  }
+  .common-treated .common-treated-second img {
+    margin-top: 0.3rem;
+  }
+  .common-treated .common-treated-second h4 {
+    width: 95%;
+  }
+  .common-treated .common-treated-second .common-treated-second-one {
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (min-width: 1272px) and (max-width: 1338px) {
+  .About-Clinic .About-Clinic-first img {
+    height: auto;
+  }
+  .About-Clinic .About-Clinic-third img {
+    height: auto;
+  }
+  .About-Clinic .About-Clinic-second {
+    padding: 0 1rem 0 1rem !important;
+  }
+  .About-Clinic .About-Clinic-second .col-6 {
+    padding: 0.3rem !important;
+  }
+  .About-Clinic .About-Clinic-second .col-6 img {
+    margin-bottom: 0.2rem !important;
+  }
+  .Testimonials .Testimonials-two h1 {
+    position: relative;
+    top: 3rem;
+  }
+}
+@media screen and (max-width: 1025.99px) {
+  .common-treated .col-xl-4 {
+    height: auto;
+    text-align: center;
+  }
+  .common-treated .col-xl-4 h4 {
+    text-align: center;
+  }
+  footer .footer .fotter-third button {
+    padding: 1rem 3rem;
+  }
+  .Testimonials .Testimonials-two h1 {
+    position: relative;
+    top: 3rem;
+  }
+}/*# sourceMappingURL=Style.css.map */
